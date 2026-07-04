@@ -1,6 +1,6 @@
 # ═══════════════════════════════════════════════════════════════
 #                    TrendRadar 配置文件
-#                      Version: 2.4.0（中间路线版）
+#                      Version: 2.4.0（中间路线版-优化AI版）
 # ═══════════════════════════════════════════════════════════════
 
 
@@ -76,8 +76,8 @@ report:
   mode: "daily"
   display_mode: "keyword"
   sort_by_position_first: false
-  rank_threshold: 5
-  max_news_per_keyword: 1      # ✅ 每个标签只留1条，总条数=规则数（约40条）
+  rank_threshold: 1            # ✅ 改动1：从5降到1，让排名靠前的热榜也能进入
+  max_news_per_keyword: 2      # ✅ 改动2：从1升到2，给AI更多素材
 
 
 # ===============================================================
@@ -103,7 +103,7 @@ display:
     hotlist: true
     new_items: true            # ✅ 开启后，即使没命中关键词的全网爆点也会带🆕标给你瞄一眼
     rss: true
-    standalone: false
+    standalone: true           # ✅ 改动3：从false改为true，让新热点区能进入AI分析
     ai_analysis: true
 
   standalone:
@@ -162,7 +162,7 @@ ai_analysis:
   prompt_file: "ai_analysis_prompt.txt"
   mode: "follow_report"
   max_news_for_analysis: 150
-  include_rss: false
+  include_rss: true            # ✅ 改动4：从false改为true，让20条Hacker News被AI分析
   include_standalone: true
   include_rank_timeline: true
 
