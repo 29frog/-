@@ -78,7 +78,7 @@ K线
 
 # ─────────── 人工智能与半导体 ───────────
 [AI技术前沿]
-/大模型|大语言模型|多模态|世界模型|生成式AI|RAG|微调|对齐|RLHF|算力扩展|MoE/ => AI技术
+/人工智能|AI|机器学习|大模型|大语言模型|多模态|世界模型|生成式AI|RAG|微调|对齐|RLHF|算力扩展|MoE/ => AI技术        ⬆️ 改动1：增加“人工智能|AI|机器学习”三个通用高频词
 /AI Agent|智能体|具身智能|人形机器人|灵巧手|任务规划|自主学习/ => AI应用
 /开源模型|Llama|Mixtral|Qwen|DeepSeek|Claude|Gemini|Grok/ => 重要AI模型
 @1
@@ -94,7 +94,7 @@ K线
 [AI行业落地]
 /AI医疗|AI制药|AI金融|AI法律|AI教育|AI制造/ => 垂直落地
 /AI编程|Copilot|代码生成|自动测试/ => 开发者工具
-/OpenAI|Anthropic|Google|Meta|Microsoft|NVIDIA/ => AI巨头
+/OpenAI|Anthropic|Google|Meta|Microsoft|NVIDIA|Apple|Amazon|华为/ => AI巨头        ⬆️ 改动2：增加“Apple|Amazon|华为”三家重要科技公司
 /AI安全|算法歧视|深度伪造|AI立法|生成式AI监管/ => AI治理
 @1
 
