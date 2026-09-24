@@ -1,0 +1,18 @@
+name: Check In
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  check-in:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-enable workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow enable crawler.yml
+          echo "✅ 已重新启用 Get Hot News 工作流，试用期已重置。"
