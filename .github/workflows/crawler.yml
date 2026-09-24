@@ -2,8 +2,8 @@ name: Get Hot News
 
 on:
   schedule:
-    # 已按要求修改为每小时的第 45 分钟运行
-    - cron: "45 * * * *"
+    # 已按要求修改为每小时的第 50 分钟运行
+    - cron: "50 * * * *"
 
   workflow_dispatch:
 
@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 1
           clean: true
 
-      # ⚠️ 注意：这里原版的“试用期检查”逻辑已被彻底删除，以后无需再签到续期
+      # ⚠️ 注意：原版的“试用期检查”逻辑已被彻底删除，以后无需再签到续期
       
       - name: Set up Python
         uses: actions/setup-python@v6
