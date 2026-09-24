@@ -10,12 +10,9 @@ jobs:
   check-in:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
       - name: Re-enable workflow
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow enable crawler.yml
+          gh workflow enable crawler.yml --repo ${{ github.repository }}
           echo "✅ 已重新启用 Get Hot News 工作流，试用期已重置。"
